@@ -1,6 +1,6 @@
 <?php
 
-namespace ShSo\Lacassa\Query;
+namespace cipwebapp\Lacassa\Query;
 
 use Illuminate\Database\Query\Builder as BaseBuilder;
 use Illuminate\Database\Query\Grammars\Grammar as BaseGrammar;
@@ -18,7 +18,7 @@ class Grammar extends BaseGrammar
     /**
      * Compile an insert statement into CQL.
      *
-     * @param \ShSo\Lacassa\Query $query
+     * @param \cipwebapp\Lacassa\Query $query
      * @param array $values
      *
      * @return string
@@ -73,7 +73,7 @@ class Grammar extends BaseGrammar
     /**
      * Compile a delete statement into CQL.
      *
-     * @param \ShSo\Lacassa\Query $query
+     * @param \cipwebapp\Lacassa\Query $query
      *
      * @return string
      */

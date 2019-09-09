@@ -1,10 +1,10 @@
 <?php
 
-namespace ShSo\Lacassa\Schema;
+namespace cipwebapp\Lacassa\Schema;
 
-use ShSo\Lacassa\Connection;
+use cipwebapp\Lacassa\Connection;
 use Illuminate\Support\Fluent;
-use ShSo\Lacassa\Schema\Blueprint as Blueprint;
+use cipwebapp\Lacassa\Schema\Blueprint as Blueprint;
 use Illuminate\Database\Schema\Blueprint as BaseBlueprint;
 use Illuminate\Database\Schema\Grammars\Grammar as BaseGrammar;
 

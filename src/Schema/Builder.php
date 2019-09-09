@@ -1,9 +1,9 @@
 <?php
 
-namespace ShSo\Lacassa\Schema;
+namespace cipwebapp\Lacassa\Schema;
 
 use Closure;
-use ShSo\Lacassa\Connection;
+use cipwebapp\Lacassa\Connection;
 use Illuminate\Database\Schema\Builder as BaseBuilder;
 
 class Builder extends BaseBuilder
@@ -18,7 +18,7 @@ class Builder extends BaseBuilder
     }
 
     /**
-     * @return \ShSo\Lacassa\Schema\Builder
+     * @return \cipwebapp\Lacassa\Schema\Builder
      */
     protected function createBlueprint($table, Closure $callback = null)
     {

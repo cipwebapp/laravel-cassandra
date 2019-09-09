@@ -1,6 +1,6 @@
 <?php
 
-namespace ShSo\Lacassa;
+namespace cipwebapp\Lacassa;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -19,7 +19,7 @@ class TestCase extends Orchestra
 
     protected function getPackageProviders($app)
     {
-        return ['ShSo\\Lacassa\\CassandraServiceProvider'];
+        return ['cipwebapp\\Lacassa\\CassandraServiceProvider'];
     }
 
     protected function getEnvironmentSetUp($app)

@@ -1,10 +1,10 @@
 <?php
 
-namespace ShSo\Lacassa\Query;
+namespace cipwebapp\Lacassa\Query;
 
 use Cassandra;
 use Illuminate\Support\Arr;
-use ShSo\Lacassa\Connection;
+use cipwebapp\Lacassa\Connection;
 use InvalidArgumentException;
 use Illuminate\Database\Query\Builder as BaseBuilder;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace ShSo\Lacassa\Schema;
+namespace cipwebapp\Lacassa\Schema;
 
 use Illuminate\Database\Connection;
 use Illuminate\Database\Schema\Blueprint as BaseBluprint;

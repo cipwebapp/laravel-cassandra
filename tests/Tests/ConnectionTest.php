@@ -1,16 +1,16 @@
 <?php
 
-namespace ShSo\Lacassa\Tests;
+namespace cipwebapp\Lacassa\Tests;
 
 use DB;
 use Cassandra\Rows;
 use Cassandra\FutureRows;
-use ShSo\Lacassa\TestCase;
-use ShSo\Lacassa\Connection;
-use ShSo\Lacassa\Query\Builder;
+use cipwebapp\Lacassa\TestCase;
+use cipwebapp\Lacassa\Connection;
+use cipwebapp\Lacassa\Query\Builder;
 use Cassandra\DefaultSession as CassandraSession;
-use ShSo\Lacassa\Schema\Builder as SchemaBuilder;
-use ShSo\Lacassa\Schema\Grammar as SchemaGrammar;
+use cipwebapp\Lacassa\Schema\Builder as SchemaBuilder;
+use cipwebapp\Lacassa\Schema\Grammar as SchemaGrammar;
 
 class ConnectionTest extends TestCase
 {

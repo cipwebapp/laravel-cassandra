@@ -32,7 +32,7 @@ Note: _datastax php-driver works with php version 5.6.\*, 7.0.\* and 7.1.\* only
 ### Installation using composer
 
 ```sh
-composer require shso/laravel-cassandra
+composer require cipwebapp/laravel-cassandra
 ```
 
 And add the service provider in config/app.php:
@@ -42,7 +42,7 @@ And add the service provider in config/app.php:
 ...
 providers: [
     ...,
-    ShSo\Lacassa\CassandraServiceProvider::class,
+    cipwebapp\Lacassa\CassandraServiceProvider::class,
     ...,
 ],
 ...

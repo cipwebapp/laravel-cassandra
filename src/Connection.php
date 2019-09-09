@@ -1,13 +1,13 @@
 <?php
 
-namespace ShSo\Lacassa;
+namespace cipwebapp\Lacassa;
 
 use Cassandra;
-use ShSo\Lacassa\Query\Builder as QueryBuilder;
-use ShSo\Lacassa\Query\Grammar as QueryGrammar;
-use ShSo\Lacassa\Schema\Builder as SchemaBuilder;
-use ShSo\Lacassa\Schema\Grammar as SchemaGrammar;
-use ShSo\Lacassa\Query\Processor as QueryProcessor;
+use cipwebapp\Lacassa\Query\Builder as QueryBuilder;
+use cipwebapp\Lacassa\Query\Grammar as QueryGrammar;
+use cipwebapp\Lacassa\Schema\Builder as SchemaBuilder;
+use cipwebapp\Lacassa\Schema\Grammar as SchemaGrammar;
+use cipwebapp\Lacassa\Query\Processor as QueryProcessor;
 use Illuminate\Database\Connection as BaseConnection;
 use Cassandra\Exception\RuntimeException as CassandraRuntimeException;
 
@@ -41,7 +41,7 @@ class Connection extends BaseConnection
      *
      * @param string $table
      *
-     * @return \ShSo\Lacassa\Query\Builder
+     * @return \cipwebapp\Lacassa\Query\Builder
      */
     public function table($table)
     {
@@ -49,7 +49,7 @@ class Connection extends BaseConnection
     }
 
     /**
-     * @return \ShSo\Lacassa\Schema\Builder
+     * @return \cipwebapp\Lacassa\Schema\Builder
      */
     public function getSchemaBuilder()
     {
@@ -59,7 +59,7 @@ class Connection extends BaseConnection
     /**
      * Returns the connection grammer.
      *
-     * @return \ShSo\Lacassa\Schema\Grammar
+     * @return \cipwebapp\Lacassa\Schema\Grammar
      */
     public function getSchemaGrammar()
     {
@@ -132,7 +132,7 @@ class Connection extends BaseConnection
     }
 
     /**
-     * @return \ShSo\Lacassa\Query\Processor
+     * @return \cipwebapp\Lacassa\Query\Processor
      */
     protected function getDefaultPostProcessor()
     {
@@ -140,7 +140,7 @@ class Connection extends BaseConnection
     }
 
     /**
-     * @return \ShSo\Lacassa\Query\Builder
+     * @return \cipwebapp\Lacassa\Query\Builder
      */
     protected function getDefaultQueryBuilder()
     {
@@ -148,7 +148,7 @@ class Connection extends BaseConnection
     }
 
     /**
-     * @return \ShSo\Lacassa\Query\Grammar
+     * @return \cipwebapp\Lacassa\Query\Grammar
      */
     protected function getDefaultQueryGrammar()
     {
@@ -156,7 +156,7 @@ class Connection extends BaseConnection
     }
 
     /**
-     * @return \ShSo\Lacassa\Schema\Grammar
+     * @return \cipwebapp\Lacassa\Schema\Grammar
      */
     protected function getDefaultSchemaGrammar()
     {

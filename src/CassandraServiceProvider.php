@@ -1,6 +1,6 @@
 <?php
 
-namespace ShSo\Lacassa;
+namespace cipwebapp\Lacassa;
 
 use Illuminate\Support\ServiceProvider;
 
