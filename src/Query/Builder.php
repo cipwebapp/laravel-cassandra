@@ -17,6 +17,7 @@ class Builder extends BaseBuilder
      */
     public $bindings = [
         'select' => [],
+        'join' => [],
         'where'  => [],
         'updateCollection' => [],
         'insertCollection' => [],
