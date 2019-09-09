@@ -1,5 +1,5 @@
 {
-    "name": "shso/laravel-cassandra",
+    "name": "cipwebapp/laravel-cassandra",
     "type": "library",
     "description": "Cassandra based query builder for laravel.",
     "license": "MIT",
@@ -24,24 +24,24 @@
     },
     "authors": [
         {
-            "name": "Shahin Sorkh",
-            "email": "sorkh.shahin@hotmail.com"
+            "name": "cipwebapp",
+            "email": "cipwebapp@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "ShSo\\Lacassa\\": "src/"
+            "cipwebapp\\Lacassa\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ShSo\\Lacassa\\": "tests/"
+            "cipwebapp\\Lacassa\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ShSo\\Lacassa\\CassandraServiceProvider"
+                "cipwebapp\\Lacassa\\CassandraServiceProvider"
             ]
         }
     },
