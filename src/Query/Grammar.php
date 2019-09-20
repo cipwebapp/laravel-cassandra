@@ -39,7 +39,7 @@ class Grammar extends BaseGrammar
             return $this->parameterize($record);
         })->implode(', ');
 
-        return "insert into {$table} ({$columns}) values ({$parameters})";
+        return "insert into {$table} ({$columns}) values ({$parameters}) IF NOT EXISTS";
     }
 
     /**
@@ -118,7 +118,7 @@ class Grammar extends BaseGrammar
             $upateCollections = $columns ? ', '.$upateCollections : $upateCollections;
         }
 
-        return trim("update {$table} set $columns $upateCollections $wheres");
+        return trim("update {$table} set $columns $upateCollections $wheres IF EXISTS");
     }
 
     /**
