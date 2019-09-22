@@ -354,4 +354,10 @@ class Builder extends BaseBuilder
 
         return $this->execute($cql);
     }
+
+    public function append($appending)
+    {
+        $this->appending = $appending;
+        return $this;
+    }
 }

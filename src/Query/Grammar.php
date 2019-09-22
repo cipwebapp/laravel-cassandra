@@ -39,7 +39,9 @@ class Grammar extends BaseGrammar
             return $this->parameterize($record);
         })->implode(', ');
 
-        return "insert into {$table} ({$columns}) values ({$parameters}) IF NOT EXISTS";
+        $appending = $this->compileAppending($query);
+
+        return "insert into {$table} ({$columns}) values ({$parameters}) {$appending}";
     }
 
     /**
@@ -118,7 +120,9 @@ class Grammar extends BaseGrammar
             $upateCollections = $columns ? ', '.$upateCollections : $upateCollections;
         }
 
-        return trim("update {$table} set $columns $upateCollections $wheres IF EXISTS");
+        $appending = $this->compileAppending($query);
+
+        return trim("update {$table} set $columns $upateCollections $wheres $appending");
     }
 
     /**
@@ -205,7 +209,7 @@ class Grammar extends BaseGrammar
 
     /**
      * @param Builder $query
-     * @param string $columns
+     * @param array $columns
      *
      * @return string
      */
@@ -220,5 +224,10 @@ class Grammar extends BaseGrammar
     public function compileAllowFiltering($query, $allow_filtering)
     {
         return $allow_filtering ? 'allow filtering' : '';
+    }
+
+    public function compileAppending($query)
+    {
+        return $query->appending;
     }
 }
