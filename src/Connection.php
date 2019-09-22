@@ -229,4 +229,9 @@ class Connection extends BaseConnection
     {
         return call_user_func_array([$this->connection, $method], $parameters);
     }
+
+    public function update($query, $bindings = [])
+    {
+        return $this->statement($query, $bindings);
+    }
 }
